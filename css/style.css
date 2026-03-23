@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+    color: #333;
+}
+
+p {
+    color: #70747a;
+}
+
+
+.nav-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 2rem;
+    height: 80px;
+
+    color: white;
+}
+
+.nav-container h1 {
+    font-size: 50px;
+}
+
+.navbar-itens {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.navbar-itens li {
+    text-transform: uppercase;
+}
+
+.navbar-itens a {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+
+.main-banner {
+    position: relative;
+
+    background-image: url(../img/tela.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-container h1,
+.navbar-itens i {
+    color: #333;
+
+}
+
+.main-banner {
+    position: relative;
+}
+
+.main-banner::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.251);
+}
+
+.main-banner H1 {
+    font-size: 50px;
+}
+
+.main-banner P {
+    font-size: 25px;
+}
+
+.btn-class {
+    display: flex;
+    margin-top: 10rem;
+
+}
+
+#btn-mais {
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 20px 25px;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    background-color: #33333300;
+    gap: 0.4rem;
+    font-size: 25px;
+    font-family: "poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.info-container {
+    padding-bottom: 5rem;
+    text-align: center;
+}
+
+.info-container h2 {
+    font-size: 36px;
+}
+
+.quem-sou {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    
+
+}
+
+.info {
+    
+    flex: 1;
+    max-width: 325px;
+    margin: 0 ;
+    transition: 0.5s;
+    background-color:#09293f;
+    border-radius: 18px;
+   
+    
+}
+
+.info:hover {
+    animation: pulso 1s ;
+     background-color:#031b2b;
+   
+}
+
+@keyframes pulso {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.info p {
+    line-height: 1.6;
+    padding: 20px;
+    text-align: justify;
+    color: #70747a;
+
+}
+.info li{
+    list-style-type: none;
+   
+}
+.info h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    margin: 5rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+#projetos {
+    margin: 30px;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#projetos h2 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.projetos-container {
+    margin: 50px;
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projeto-card {
+    width: 290px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+
+.projeto-card img {
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+}
+
+
+.projeto-card h3 {
+    margin: 10px 0;
+}
+
+.projeto-card p {
+    padding: 0 10px 15px;
+    font-size: 14px;
+}
+
+
+.projeto-card:hover {
+    transform: translateY(-5px);
+}
+
+#contatos {
+    background-color: #021420;
+    margin: 0;
+    padding: 60px 20px;
+
+}
+
+.contatos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contatos-container h2 {
+    margin: 0px;
+    color: #333;
+    padding: 30px;
+}
+
+.navbar-contatos {
+    display: flex;
+    gap: 70px;
+    list-style: none;
+
+}
+
+.navbar-contatos li {
+    font-size: 20px;
+    color: #333;
+
+}
+
+.navbar-contatos h3{
+    color: #ffffff7a;
+   
+   
+}
+
+.navbar-contatos i{
+    color: #ffffffc1 
+}
+
+footer{
+    background-color:#021927;
+    color: #333;
+    text-align: center;
+    padding: 25px 20px;
+    position: relative;
+}
+
+footer h2{
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.copy{
+    font-size: 14px;
+}
+
+.btn-topo{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background:#333;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.btn-topo:hover{
+    transform: translateY(-5px);
+}
