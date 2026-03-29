@@ -41,6 +41,11 @@ p {
     display: flex;
     gap: 15px;
     list-style: none;
+    transition: 0.5s;
+}
+
+.navbar-itens:hover{
+    animation: pulso 2s ;
 }
 
 .navbar-itens li {
@@ -140,7 +145,7 @@ p {
     max-width: 325px;
     margin: 0 ;
     transition: 0.5s;
-    background-color:#09293f;
+    background-color:#333;
     border-radius: 18px;
    
     
@@ -148,7 +153,7 @@ p {
 
 .info:hover {
     animation: pulso 1s ;
-     background-color:#031b2b;
+     background-color:#333333e6;
    
 }
 
@@ -181,6 +186,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #dfdcdc;
 }
 
 .center {
@@ -189,6 +195,7 @@ p {
     align-items: center;
     justify-content: center;
     font-size: 25px;
+    
 }
 
 #projetos {
@@ -242,7 +249,7 @@ p {
 }
 
 #contatos {
-    background-color: #021420;
+    background-color: #333;
     margin: 0;
     padding: 60px 20px;
 
@@ -257,7 +264,7 @@ p {
 
 .contatos-container h2 {
     margin: 0px;
-    color: #333;
+    color: #ffffff;
     padding: 30px;
 }
 
@@ -270,7 +277,7 @@ p {
 
 .navbar-contatos li {
     font-size: 20px;
-    color: #333;
+    color: #ffffff;
 
 }
 
